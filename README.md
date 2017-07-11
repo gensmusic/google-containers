@@ -1,2 +1,4 @@
-# kubernetes-images
-kubernetes-images
+# gcr.io/google-containers
+
+# images
+- kubernetes 1.7
