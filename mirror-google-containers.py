@@ -82,7 +82,7 @@ def transport(images, history):
         target = "mirrorgooglecontainers/%s" % (reponame)
         print 'Start mirror %s to %s' % (source, target)
 
-        command = "docker rmi -f $(docker images -q | uniq) > /dev/null"
+        command = "docker rmi -f $(docker images -q | uniq) > /dev/null 2>&1"
         runCommand(command)
 
         updateOK = False
