@@ -10,10 +10,6 @@ import socket
 from datetime import datetime
 
 
-dockerlist = [
-]
-
-registryAddr = ""
 registryUser = ""
 registryPswd = ""
 
@@ -104,5 +100,5 @@ if __name__ == '__main__':
 
     # login(registry, username, password)
 
-    images = getImages
+    images = getImages()
     transport(images)
