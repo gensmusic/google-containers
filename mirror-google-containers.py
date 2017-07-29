@@ -58,7 +58,7 @@ def transport(images):
         print 'Start mirror %s to %s' % (source, target)
 
         command = "docker rmi -f $(docker images -q | uniq)"
-        mustRunCommand(command)
+        runCommand(command)
 
         command = "docker pull %s -a" % (source)
         mustRunCommand(command)
