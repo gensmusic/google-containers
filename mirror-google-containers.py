@@ -8,10 +8,31 @@ import time
 import subprocess
 import socket
 from datetime import datetime
-
+import shelve
 
 registryUser = ""
 registryPswd = ""
+
+class History:
+    def __init__(self, filename = 'update-record'):
+        self.db = shelve.open(filename)
+
+    def today(self):
+        return time.strftime('%Y%m%d')
+
+    def update(self, source, success = True):
+        self.db[source] = {'date': self.today(), 'ok': success}
+        self.db.sync()
+
+    def hasUpdatedToday(self, source):
+        if self.db.has_key(source):
+            record = self.db[source]
+            if record['date'] == self.today() and record['ok'] == True:
+                return True
+        return False
+
+    def close(self):
+        self.db.close()
 
 def runCommand(args, verbose = True):
     if verbose:
@@ -51,8 +72,12 @@ def loginDockerHub():
 
     raise Exception('Failed to login docker hub')
 
-def transport(images):
+def transport(images, history):
     for source in images:
+        if history.hasUpdatedToday(source):
+            print '%s has updated today!' % (source)
+            continue
+
         reponame = source.split('/')[-1]
         target = "mirrorgooglecontainers/%s" % (reponame)
         print 'Start mirror %s to %s' % (source, target)
@@ -60,21 +85,31 @@ def transport(images):
         command = "docker rmi -f $(docker images -q | uniq)"
         runCommand(command)
 
-        command = "docker pull %s -a" % (source)
-        mustRunCommand(command)
+        updateOK = False
+        for i in [10, 20, 40]:
+            try:
+                command = "docker pull %s -a" % (source)
+                mustRunCommand(command)
 
-        command = "docker images | grep %s | awk '{print $2}'" % (source)
-        res = runCommandAndGet(command)
-        tags = res.strip().split('\n')
-        if len(tags) == 0:
-            print 'Found no tags for ' + source
-            continue
-        for tag in tags:
-            command = "docker tag %s:%s %s:%s" % (source, tag, target, tag)
-            mustRunCommand(command)
-            loginDockerHub()
-            command = "docker push %s:%s" % (target, tag)
-            mustRunCommand(command)
+                command = "docker images | grep %s | awk '{print $2}'" % (source)
+                res = runCommandAndGet(command)
+                tags = res.strip().split('\n')
+                if len(tags) == 0:
+                    print 'Found no tags for ' + source
+                    break
+                for tag in tags:
+                    command = "docker tag %s:%s %s:%s" % (source, tag, target, tag)
+                    mustRunCommand(command)
+                    loginDockerHub()
+                    command = "docker push %s:%s" % (target, tag)
+                    mustRunCommand(command)
+                updateOK = True
+                break
+            except Exception as e:
+                print '%s got err:%s, retry in %d seonds' % (source, str(e), i)
+                time.sleep(i)
+        # record update history
+        history.update(source, updateOK)
 
 def getImages():
     with open('google-containers-images.list') as f:
@@ -101,4 +136,5 @@ if __name__ == '__main__':
     # login(registry, username, password)
 
     images = getImages()
-    transport(images)
+    history = History()
+    transport(images, history)
