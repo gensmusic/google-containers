@@ -90,6 +90,7 @@ class Docker:
         raise Exception('Failed to login docker hub')
 
     def pull(self, source, all = False):
+        print 'pull image:' + source
         command = "docker pull %s %s" % (source, "-a" if all else "")
         mustRunCommand(command)
 
@@ -102,6 +103,7 @@ class Docker:
         mustRunCommand(command)
 
     def push(self, source):
+        print 'push ' + source
         self.login()
         command = "docker push %s" % (source)
         mustRunCommand(command)
