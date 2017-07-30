@@ -37,7 +37,7 @@ class History:
         if not tagsList.has_key(tag):
             return True
         info = tagsList[tag]
-        if info['date'] == self.today() and info['ok'] == True and info['digest'] == digest:
+        if info['ok'] == True and info['digest'] == digest:
             return False
         return True
 
