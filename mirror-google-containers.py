@@ -111,7 +111,7 @@ def getOriginalTagInfo(image):
     err = None
     for i in [2, 4, 8]:
         try:
-            command = "gcloud alpha container images list-tags gcr.io/google-containers/%s --limit=999 --format=json" % (image)
+            command = "gcloud alpha container images list-tags %s --limit=999 --format=json" % (image)
             res = mustRunCommandAndGet(command)
             res = json.loads(res)
             taglists = []
