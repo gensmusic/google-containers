@@ -134,6 +134,7 @@ def getOriginalTagInfo(image):
             err = e
             print 'getOriginalTagInfo got error:%s and retry in %d seconds' % (str(e), i)
             time.sleep(i)
+
     if err is not None:
         raise Exception(str(err))
     return []
@@ -170,6 +171,8 @@ def transport(images, docker, history):
                 except Exception as e:
                     err = e
                     print '%s got err:%s, retry in %d seonds' % (source, str(e), i)
+                    # try to clean images in case there is no space
+                    docker.removeAllImages()
                     time.sleep(i)
             # record update history
             ok = True if err is None else False
