@@ -126,7 +126,7 @@ def getOriginalTagInfo(image):
                     continue
                 if len(tags) == 0:
                     continue
-                for tag in tags:s = ""
+                for tag in tags:
                     taglists.append({'tag': tag, 'digest': digest})
             return taglists
         except Exception as e:
