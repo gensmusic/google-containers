@@ -62,8 +62,7 @@ def mustRunCommand(args):
 def mustRunCommandAndGet(args):
     if logVerbose:
         print '=> Run command:', args
-    else:
-        args += ' >/dev/null 2>&1'
+ 
     # will raise exception when exit code is not 0
     return subprocess.check_output(args, shell=True)
 
