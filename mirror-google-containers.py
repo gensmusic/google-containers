@@ -32,14 +32,14 @@ class History:
 
     def shouldUpdate(self, source, tag, digest):
         if not self.db.has_key(source):
-            return False
+            return True
         tagsList = self.db[source]
         if not tagsList.has_key(tag):
-            return False
+            return True
         info = tagsList[tag]
         if info['date'] == self.today() and info['ok'] == True and info['digest'] == digest:
-            return True
-        return False
+            return False
+        return True
 
     def close(self):
         self.db.close()
@@ -121,10 +121,12 @@ def getOriginalTagInfo(image):
                     continue
                 tags = entry['tags']
                 digest = entry['digest']
-                if not isinstance(tags, list) or len(tags) == 0 or not isinstance(digest, str):
-                    print 'Warning:%s bad/empty tags or digest:' % (image), entry
+                if not isinstance(tags, list) or len(digest) == 0:
+                    print 'Warning:%s bad tags or digest:' % (image), entry
                     continue
-                for tag in tags:
+                if len(tags) == 0:
+                    continue
+                for tag in tags:s = ""
                     taglists.append({'tag': tag, 'digest': digest})
             return taglists
         except Exception as e:
