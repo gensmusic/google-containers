@@ -9,9 +9,9 @@ import subprocess
 import socket
 from datetime import datetime
 import shelve
+import json
 
-registryUser = ""
-registryPswd = ""
+logVerbose = True
 
 class History:
     def __init__(self, filename = 'update-record'):
@@ -20,96 +20,157 @@ class History:
     def today(self):
         return time.strftime('%Y%m%d')
 
-    def update(self, source, success = True):
-        self.db[source] = {'date': self.today(), 'ok': success}
+    def update(self, source, tag, digest, success = True, err = ''):
+        taginfo = {'digest': digest, 'date': self.today(), 'ok': success, 'err': err}
+        if self.db.has_key(source):
+            d = self.db[source]
+            d[tag] = taginfo
+            self.db[source] = d
+        else:
+            self.db[source] = {tag : taginfo}
         self.db.sync()
 
-    def hasUpdatedToday(self, source):
-        if self.db.has_key(source):
-            record = self.db[source]
-            if record['date'] == self.today() and record['ok'] == True:
-                return True
+    def shouldUpdate(self, source, tag, digest):
+        if not self.db.has_key(source):
+            return False
+        tagsList = self.db[source]
+        if not tagsList.has_key(tag):
+            return False
+        info = tagsList[tag]
+        if info['date'] == self.today() and info['ok'] == True and info['digest'] == digest:
+            return True
         return False
 
     def close(self):
         self.db.close()
 
-def runCommand(args, verbose = True):
-    if verbose:
+def runCommand(args):
+    if logVerbose:
         print '=> Run command:', args
+    else:
+        args += " >/dev/null 2>&1"
     i = subprocess.call(args, shell=True)
-    if i != 0:
+    if i != 0 and logVerbose:
         print '=> Failed to runCommand:', args
     return i
 
-def mustRunCommand(args, verbose = True):
-    if verbose:
-        print '=> Run command:', args
-    i = subprocess.call(args, shell=True)
+def mustRunCommand(args):
+    i = runCommand(args)
     if i != 0:
         raise Exception('Failed to runcommand', args)
 
-def runCommandAndGet(args, verbose = True):
-    if verbose:
+def mustRunCommandAndGet(args):
+    if logVerbose:
         print '=> Run command:', args
+    else:
+        args += ' >/dev/null 2>&1'
+    # will raise exception when exit code is not 0
+    return subprocess.check_output(args, shell=True)
+
+def runCommandAndGet(args):
     try:
-        return subprocess.check_output(args, shell=True)
+        return mustRunCommandAndGet(args)
     except Exception as e:
         return str(e)
 
-def loginDockerHub():
-    command = "docker login -u %s -p %s" % (registryUser, registryPswd)
+class Docker:
+    def __init__(self, username, password):
+        self.username = username
+        self.password = password
+    
+    def login(self):
+        command = "docker login -u %s -p %s" % (self.username, self.password)
+        for i in [2, 4, 8]:
+            res = runCommandAndGet(command)
+            if 'Login Succeeded' in res:
+                if logVerbose:
+                    print 'Login Succeeded'
+                return
+            print 'Login got:%s and retry in %d seconds' %s (res, i)
+            time.sleep(i)
+        raise Exception('Failed to login docker hub')
 
-    for i in [2, 4, 8]:
-        res = runCommandAndGet(command, False)
-        if 'Login Succeeded' in res:
-            print 'Login Succeeded'
-            return True
-        
-        print 'Login got:' + res
-        print 'try in %d seconds' % i
-        time.sleep(i)
+    def pull(self, source, all = False):
+        command = "docker pull %s %s" % (source, "-a" if all else "")
+        mustRunCommand(command)
 
-    raise Exception('Failed to login docker hub')
-
-def transport(images, history):
-    for source in images:
-        if history.hasUpdatedToday(source):
-            print '%s has updated today!' % (source)
-            continue
-
-        reponame = source.split('/')[-1]
-        target = "mirrorgooglecontainers/%s" % (reponame)
-        print 'Start mirror %s to %s' % (source, target)
-
-        command = "docker rmi -f $(docker images -q | uniq) > /dev/null 2>&1"
+    def removeAllImages(self):
+        command = "docker rmi -f $(docker images -q | uniq)"
         runCommand(command)
 
-        updateOK = False
-        for i in [10, 20, 40]:
-            try:
-                command = "docker pull %s -a" % (source)
-                mustRunCommand(command)
+    def tag(self, source, target):
+        command = "docker tag %s %s" % (source, target)
+        mustRunCommand(command)
 
-                command = "docker images | grep %s | awk '{print $2}'" % (source)
-                res = runCommandAndGet(command)
-                tags = res.strip().split('\n')
-                if len(tags) == 0:
-                    print 'Found no tags for ' + source
-                    break
+    def push(self, source):
+        self.login()
+        command = "docker push %s" % (source)
+        mustRunCommand(command)
+
+def getOriginalTagInfo(image):
+    err = None
+    for i in [2, 4, 8]:
+        try:
+            command = "gcloud alpha container images list-tags gcr.io/google-containers/%s --limit=999 --format=json" % (image)
+            res = mustRunCommandAndGet(command)
+            res = json.loads(res)
+            taglists = []
+            for entry in res:
+                if not entry.has_key('tags') or not entry.has_key('digest'):
+                    print 'Warning:%s has no tags or digest entry:' % (image), entry
+                    continue
+                tags = entry['tags']
+                digest = entry['digest']
+                if not isinstance(tags, list) or len(tags) == 0 or not isinstance(digest, str):
+                    print 'Warning:%s bad/empty tags or digest:' % (image), entry
+                    continue
                 for tag in tags:
-                    command = "docker tag %s:%s %s:%s" % (source, tag, target, tag)
-                    mustRunCommand(command)
-                    loginDockerHub()
-                    command = "docker push %s:%s" % (target, tag)
-                    mustRunCommand(command)
-                updateOK = True
-                break
-            except Exception as e:
-                print '%s got err:%s, retry in %d seonds' % (source, str(e), i)
-                time.sleep(i)
-        # record update history
-        history.update(source, updateOK)
+                    taglists.append({'tag': tag, 'digest': digest})
+            return taglists
+        except Exception as e:
+            err = e
+            print 'getOriginalTagInfo got error:%s and retry in %d seconds' % (str(e), i)
+            time.sleep(i)
+    if err is not None:
+        raise Exception(str(err))
+    return []
+
+
+def transport(images, docker, history):
+    for source in images:
+        tagslist = getOriginalTagInfo(source)
+        if len(tagslist) == 0:
+            print 'Found no tags for ' + source
+            continue
+        # clean
+        docker.removeAllImages()
+
+        for taginfo in tagslist:
+            tag = taginfo['tag']
+            digest = taginfo['digest']
+            if not history.shouldUpdate(source, tag, digest):
+                print '%s %s %s NO need to update' % (source, tag, digest)
+                continue
+
+            reponame = source.split('/')[-1]
+            fromImage = "%s:%s" % (source, tag)
+            toImage = "mirrorgooglecontainers/%s:%s" % (reponame, tag)
+            print 'Start mirror %s to %s' % (fromImage, toImage)
+
+            err = None
+            for i in [10, 20, 30]:
+                try:
+                    docker.pull(fromImage)
+                    docker.tag(fromImage, toImage)
+                    docker.push(toImage)
+                    break
+                except Exception as e:
+                    err = e
+                    print '%s got err:%s, retry in %d seonds' % (source, str(e), i)
+                    time.sleep(i)
+            # record update history
+            ok = True if err is None else False
+            history.update(source, tag, digest, ok, str(err))
 
 def getImages():
     with open('google-containers-images.list') as f:
@@ -124,8 +185,6 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    registryUser, registryPswd = args.username, args.password
-
     # user root
     if os.getuid() != 0:
         print '!' * 50
@@ -133,8 +192,12 @@ if __name__ == '__main__':
         print '!' * 50
         exit(1)
 
-    # login(registry, username, password)
+
+    print 'Started...' + str(datetime.now())
 
     images = getImages()
     history = History()
-    transport(images, history)
+    docker = Docker(args.username, args.password)
+    transport(images, docker, history)
+
+    print 'Finished...' + str(datetime.now())

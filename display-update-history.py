@@ -6,5 +6,7 @@ import shelve
 
 if __name__ == '__main__':
     db = shelve.open('update-record')
-    for key in db.keys():
-        print key, db[key]
+    for source in db.keys():
+        info = db[source]
+        for tag in info.keys():
+            print source, tag, info[tag]
