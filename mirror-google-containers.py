@@ -184,8 +184,10 @@ if __name__ == '__main__':
 
     parser.add_argument("username", help="target registry login username")
     parser.add_argument("password", help="target registry login password")
-
+    parser.add_argument("-v", "--verbose", help="increase output verbosity", action="store_true")
     args = parser.parse_args()
+
+    logVerbose = args.verbose
 
     # user root
     if os.getuid() != 0:
