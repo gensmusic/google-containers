@@ -112,6 +112,7 @@ def getOriginalTagInfo(image):
     err = None
     for i in [2, 4, 8]:
         try:
+            err = None
             command = "gcloud alpha container images list-tags %s --limit=999 --format=json" % (image)
             res = mustRunCommandAndGet(command)
             res = json.loads(res)
