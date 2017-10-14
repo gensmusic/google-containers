@@ -1,3 +1,8 @@
+gcr.io/google-containers/addon-resizer-amd64
+gcr.io/google-containers/addon-resizer-arm
+gcr.io/google-containers/addon-resizer-arm64
+gcr.io/google-containers/addon-resizer-ppc64le
+gcr.io/google-containers/addon-resizer-s390x
 gcr.io/google-containers/addon-resizer
 gcr.io/google-containers/aggregator
 gcr.io/google-containers/alpine-iptables-amd64
@@ -9,6 +14,7 @@ gcr.io/google-containers/busybox
 gcr.io/google-containers/cadvisor
 gcr.io/google-containers/cassandra-e2e-test
 gcr.io/google-containers/cassandra
+gcr.io/google-containers/check-metadata-concealment
 gcr.io/google-containers/cloud-controller-manager-amd64
 gcr.io/google-containers/cloud-controller-manager-arm
 gcr.io/google-containers/cloud-controller-manager-arm64
@@ -23,7 +29,9 @@ gcr.io/google-containers/cluster-proportional-autoscaler-arm64
 gcr.io/google-containers/cluster-proportional-autoscaler-ppc64le
 gcr.io/google-containers/clusterapi-tester
 gcr.io/google-containers/cos-nvidia-driver-install
+gcr.io/google-containers/cpvpa-amd64
 gcr.io/google-containers/cuda-vector-add
+gcr.io/google-containers/custom-metrics-stackdriver-adapter
 gcr.io/google-containers/debian-base-amd64
 gcr.io/google-containers/debian-base-arm
 gcr.io/google-containers/debian-base-arm64
@@ -46,6 +54,7 @@ gcr.io/google-containers/defaultbackend-arm64
 gcr.io/google-containers/defaultbackend-ppc64le
 gcr.io/google-containers/defaultbackend-s390x
 gcr.io/google-containers/defaultbackend
+gcr.io/google-containers/device-plugin-gpu
 gcr.io/google-containers/dns-pod-autoscaler
 gcr.io/google-containers/dns-rc-autoscaler
 gcr.io/google-containers/dnsmasq-amd64
@@ -134,6 +143,7 @@ gcr.io/google-containers/heapster-grafana-amd64
 gcr.io/google-containers/heapster-grafana-arm
 gcr.io/google-containers/heapster-grafana-arm64
 gcr.io/google-containers/heapster-grafana-ppc64le
+gcr.io/google-containers/heapster-grafana-s390x
 gcr.io/google-containers/heapster-grafana
 gcr.io/google-containers/heapster-influxdb-amd64
 gcr.io/google-containers/heapster-influxdb-arm
@@ -244,6 +254,11 @@ gcr.io/google-containers/kube-scheduler-arm64
 gcr.io/google-containers/kube-scheduler-ppc64le
 gcr.io/google-containers/kube-scheduler-s390x
 gcr.io/google-containers/kube-scheduler
+gcr.io/google-containers/kube-state-metrics-amd64
+gcr.io/google-containers/kube-state-metrics-arm
+gcr.io/google-containers/kube-state-metrics-arm64
+gcr.io/google-containers/kube-state-metrics-ppc64le
+gcr.io/google-containers/kube-state-metrics-s390x
 gcr.io/google-containers/kube-state-metrics
 gcr.io/google-containers/kube-ui
 gcr.io/google-containers/kube2sky-amd64
@@ -264,6 +279,8 @@ gcr.io/google-containers/kubelet-to-gcm
 gcr.io/google-containers/kubernetes-dashboard-amd64
 gcr.io/google-containers/kubernetes-dashboard-arm
 gcr.io/google-containers/kubernetes-dashboard-arm64
+gcr.io/google-containers/kubernetes-dashboard-init-amd64
+gcr.io/google-containers/kubernetes-dashboard-init-arm
 gcr.io/google-containers/kubernetes-dashboard-ppc64le
 gcr.io/google-containers/kubernetes-dashboard-s390x
 gcr.io/google-containers/kubernetes-dashboard
@@ -294,12 +311,14 @@ gcr.io/google-containers/netproxy
 gcr.io/google-containers/nettest
 gcr.io/google-containers/nginx-ingress-controller-amd64
 gcr.io/google-containers/nginx-ingress-controller-arm
+gcr.io/google-containers/nginx-ingress-controller-arm64
 gcr.io/google-containers/nginx-ingress-controller-ppc64le
 gcr.io/google-containers/nginx-ingress-controller
 gcr.io/google-containers/nginx-ingress
 gcr.io/google-containers/nginx-scale
 gcr.io/google-containers/nginx-slim-amd64
 gcr.io/google-containers/nginx-slim-arm
+gcr.io/google-containers/nginx-slim-arm64
 gcr.io/google-containers/nginx-slim-ppc64le
 gcr.io/google-containers/nginx-slim
 gcr.io/google-containers/nginx-third-party
@@ -338,9 +357,15 @@ gcr.io/google-containers/redis-install-3.2.0
 gcr.io/google-containers/redis-install
 gcr.io/google-containers/redis-slave
 gcr.io/google-containers/redis
+gcr.io/google-containers/rescheduler-amd64
+gcr.io/google-containers/rescheduler-arm
+gcr.io/google-containers/rescheduler-arm64
+gcr.io/google-containers/rescheduler-ppc64le
+gcr.io/google-containers/rescheduler-s390x
 gcr.io/google-containers/rescheduler
 gcr.io/google-containers/resource_consumer
 gcr.io/google-containers/rethinkdb
+gcr.io/google-containers/sd-dummy-exporter
 gcr.io/google-containers/serve_hostname-amd64
 gcr.io/google-containers/serve_hostname-arm
 gcr.io/google-containers/serve_hostname-arm64
