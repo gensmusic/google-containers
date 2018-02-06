@@ -391,10 +391,11 @@ gcr.io/google-containers/kube-dns-perf-client-amd64 1.1 {'date': '20170731', 'ok
 gcr.io/google-containers/zeppelin-proxy latest {'date': '20170731', 'ok': True, 'err': 'None', 'digest': u'sha256:4bf8f8d6cf518cf9abadcb5271d21880287efa8da06a24c2c166b0c3151d3507'}
 gcr.io/google-containers/zeppelin-proxy master {'date': '20170731', 'ok': True, 'digest': u'sha256:4bf8f8d6cf518cf9abadcb5271d21880287efa8da06a24c2c166b0c3151d3507', 'err': 'None'}
 gcr.io/google-containers/zeppelin-proxy 1.9.6 {'date': '20170731', 'ok': True, 'digest': u'sha256:4bf8f8d6cf518cf9abadcb5271d21880287efa8da06a24c2c166b0c3151d3507', 'err': 'None'}
-gcr.io/google-containers/etcd-empty-dir-cleanup 3.0.14.0 {'date': '20170730', 'ok': True, 'err': 'None', 'digest': u'sha256:c04a650c128de5b57c5f71f79d14a0e11ec0c2ccbbf9f81f8176ae9f434c343e'}
-gcr.io/google-containers/etcd-empty-dir-cleanup 0.0.1 {'date': '20170730', 'ok': True, 'digest': u'sha256:29f63582d3a111f6831856777c9ac912b5882c3ded40d8ca7e108ca3fc365a2a', 'err': 'None'}
-gcr.io/google-containers/etcd-empty-dir-cleanup 0.0.3 {'date': '20170730', 'ok': True, 'err': 'None', 'digest': u'sha256:c50cbba3ba72c8c54a4caf8719bd9b21f1033a7563453209b04f9b0298d70e9d'}
-gcr.io/google-containers/etcd-empty-dir-cleanup 0.0.2 {'date': '20170730', 'ok': True, 'digest': u'sha256:d764eb17c19184a3b9fb28b8ef49f30a62ebf746dc4a965f627b33b842605b2b', 'err': 'None'}
+gcr.io/google-containers/etcd-empty-dir-cleanup 3.0.14.0 {'date': '20170730', 'ok': True, 'digest': u'sha256:c04a650c128de5b57c5f71f79d14a0e11ec0c2ccbbf9f81f8176ae9f434c343e', 'err': 'None'}
+gcr.io/google-containers/etcd-empty-dir-cleanup 3.1.10.0 {'date': '20180206', 'ok': True, 'digest': u'sha256:57d0864d66cc9dc8d8ac0d3456c69ed3097151da0f592bab9d907346185a87c8', 'err': 'None'}
+gcr.io/google-containers/etcd-empty-dir-cleanup 0.0.1 {'date': '20170730', 'ok': True, 'err': 'None', 'digest': u'sha256:29f63582d3a111f6831856777c9ac912b5882c3ded40d8ca7e108ca3fc365a2a'}
+gcr.io/google-containers/etcd-empty-dir-cleanup 0.0.3 {'date': '20170730', 'ok': True, 'digest': u'sha256:c50cbba3ba72c8c54a4caf8719bd9b21f1033a7563453209b04f9b0298d70e9d', 'err': 'None'}
+gcr.io/google-containers/etcd-empty-dir-cleanup 0.0.2 {'date': '20170730', 'ok': True, 'err': 'None', 'digest': u'sha256:d764eb17c19184a3b9fb28b8ef49f30a62ebf746dc4a965f627b33b842605b2b'}
 gcr.io/google-containers/example-dns-backend v1 {'date': '20170730', 'ok': True, 'digest': u'sha256:d98e8d371442cd7a2902042da8dd59d77c34d95e88a7e32e464336ce84436143', 'err': 'None'}
 gcr.io/google-containers/k8s-dns-kube-dns-arm 1.14.2 {'date': '20170731', 'ok': True, 'err': 'None', 'digest': u'sha256:199b8f167d28444a3e7f6760aef8ed2c15b4b09945ff3803e895c1f2242333c7'}
 gcr.io/google-containers/k8s-dns-kube-dns-arm 1.14.3 {'date': '20170731', 'ok': True, 'digest': u'sha256:0dd95387687ef2fcb39e7c99af304b79435332928472cadd8f468cb846010163', 'err': 'None'}
