@@ -8873,10 +8873,10 @@ gcr.io/google-containers/cos-nvidia-driver-install v0.3 {'date': '20170730', 'ok
 gcr.io/google-containers/cos-nvidia-driver-install v0.1 {'date': '20170730', 'ok': True, 'err': 'None', 'digest': u'sha256:ad83ede6e0c6d768bf7cf69a7dec972aa5e8f88778142ca46afd3286ad58cfc8'}
 gcr.io/google-containers/cos-nvidia-driver-install v0.2 {'date': '20170730', 'ok': True, 'digest': u'sha256:685628e8a57375c593102f6332db6f250ed7d04f0ce3cdd4f34acb67bf609a10', 'err': 'None'}
 gcr.io/google-containers/cos-nvidia-driver-install 67c03542180d35eefe6064f3c8235f331173fc4b {'date': '20170913', 'ok': True, 'err': 'None', 'digest': u'sha256:d9c3fea134fcc8850c110ea0bc0e9ff1cca6b474352712d2d8f2762a29d95327'}
-gcr.io/google-containers/debian-base-amd64 0.1 {'date': '20170730', 'ok': True, 'digest': u'sha256:e7248990914c1cfbaef526332bb72064819a08b513f6a87f228f82155b7714ac', 'err': 'None'}
-gcr.io/google-containers/debian-base-amd64 0.1.0 {'date': '20170730', 'ok': True, 'err': 'None', 'digest': u'sha256:d8fb3f70ba706d6377d521e3ecb27f64751149da10ff77a457299773261cbbfc'}
-gcr.io/google-containers/debian-base-amd64 0.3 {'date': '20180213', 'ok': True, 'digest': u'sha256:9cd2db334a2d6d71a532621681fab557571b69b79bfbf8e1a71bb97ea921b259', 'err': 'None'}
-gcr.io/google-containers/debian-base-amd64 0.2 {'date': '20170902', 'ok': True, 'digest': u'sha256:f45c0513d335c6654ab72de6994f5899e65d87a24141e527b39ec5f503e22670', 'err': 'None'}
+gcr.io/google-containers/debian-base-amd64 0.1 {'date': '20170730', 'ok': True, 'err': 'None', 'digest': u'sha256:e7248990914c1cfbaef526332bb72064819a08b513f6a87f228f82155b7714ac'}
+gcr.io/google-containers/debian-base-amd64 0.1.0 {'date': '20170730', 'ok': True, 'digest': u'sha256:d8fb3f70ba706d6377d521e3ecb27f64751149da10ff77a457299773261cbbfc', 'err': 'None'}
+gcr.io/google-containers/debian-base-amd64 0.3 {'date': '20180510', 'ok': True, 'digest': u'sha256:c24f782f4c53e6e5674fc9a10ad5a6d6d7ccfc15d7f029292fcd6e907888214a', 'err': 'None'}
+gcr.io/google-containers/debian-base-amd64 0.2 {'date': '20170902', 'ok': True, 'err': 'None', 'digest': u'sha256:f45c0513d335c6654ab72de6994f5899e65d87a24141e527b39ec5f503e22670'}
 gcr.io/google-containers/debian-base-arm64 0.1 {'date': '20170730', 'ok': True, 'digest': u'sha256:d54ffeccae2dbacb0cf31a127378f53987c700e3212268f29031a3365f5f293a', 'err': 'None'}
 gcr.io/google-containers/debian-base-arm64 0.1.0 {'date': '20170730', 'ok': True, 'err': 'None', 'digest': u'sha256:c4ec83f1094894dee3258eb4c335861f3da8cc4fcee0ef0a32246c13193389a1'}
 gcr.io/google-containers/debian-base-arm64 0.3 {'date': '20180213', 'ok': True, 'digest': u'sha256:34eabc2e07cedb7a8c5d32c0219b78a4c9a48c64ac2582020ebfe95c7ac793a8', 'err': 'None'}
