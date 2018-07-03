@@ -8351,6 +8351,7 @@ gcr.io/google-containers/kube-addon-manager v8.6 {'date': '20180221', 'ok': True
 gcr.io/google-containers/kube-addon-manager v6.4-beta.2 {'date': '20170731', 'ok': True, 'digest': u'sha256:3e6ff32eb762ecf17d817c49372f4fe51052d3406772ddb0a65f89c478070b96', 'err': 'None'}
 gcr.io/google-containers/kube-addon-manager v6.4-alpha.3 {'date': '20170731', 'ok': True, 'digest': u'sha256:cddd000987536b95d25c825e9637290d7ba8fc190a90ef027b88dcec084df960', 'err': 'None'}
 gcr.io/google-containers/kube-addon-manager v5 {'date': '20170731', 'ok': True, 'digest': u'sha256:6519dac0ad0a05a2f367fb870d10cbf00d0338292bca608f478d062a075896c5', 'err': 'None'}
+gcr.io/google-containers/kube-cross V1.10.3-1 {'date': '20180703', 'ok': True, 'err': 'None', 'digest': u'sha256:b416a0bf3f3d4ca1d5477ffc0cb3f5311996d8e51b2b5132dbb50aa4195771eb'}
 gcr.io/google-containers/kube-cross v1.9.1-1 {'date': '20171017', 'ok': True, 'digest': u'sha256:058ef002ff6afbbb88a2e469b8dc92a628ba4e80bdcbde7e0648b468ab9cde54', 'err': 'None'}
 gcr.io/google-containers/kube-cross v1.7.3-0 {'date': '20170731', 'ok': True, 'digest': u'sha256:24c0a60355bc965c26107691c8d719bf832b4a916dade7025cebaf7a169e183f', 'err': 'None'}
 gcr.io/google-containers/kube-cross v1.7.3-1 {'date': '20170731', 'ok': True, 'err': 'None', 'digest': u'sha256:173893b40e2a75a800fec11f6e63a9b0d3e5fbf6fb62af09576e0f528642bfb5'}
@@ -8397,6 +8398,7 @@ gcr.io/google-containers/kube-cross v1.6.0-2 {'date': '20170731', 'ok': True, 'd
 gcr.io/google-containers/kube-cross v1 {'date': '20170731', 'ok': True, 'digest': u'sha256:7f5a8348964d5e0b02a0fe742724f8fba6e1e06ff4df2b8ce4996d9174f8ade9', 'err': 'None'}
 gcr.io/google-containers/kube-cross v1.7rc5-0 {'date': '20170731', 'ok': True, 'digest': u'sha256:03d70c444dea77d4c1f13f260790937dabafdbe50c107a0b88e6fc4f2673acc7', 'err': 'None'}
 gcr.io/google-containers/kube-cross v1.6.0-1 {'date': '20170731', 'ok': True, 'digest': u'sha256:5afe02cda26900a808144215f000b6a6a3f6856794a7b70bd9df285c4fe5733d', 'err': 'None'}
+gcr.io/google-containers/kube-cross v1.10.3-1 {'date': '20180703', 'ok': True, 'digest': u'sha256:b416a0bf3f3d4ca1d5477ffc0cb3f5311996d8e51b2b5132dbb50aa4195771eb', 'err': 'None'}
 gcr.io/google-containers/kube-cross v1.7.5-k8s1.5-0 {'date': '20170731', 'ok': True, 'err': 'None', 'digest': u'sha256:e739d450473ad2618766311cf1fc3f9b678c034632c2172d5f5091b157980509'}
 gcr.io/google-containers/kube-cross v1.7rc1-0 {'date': '20170731', 'ok': True, 'digest': u'sha256:4819d96bd3070d28a8c864d8f27938ff63de2a05cd5b6eefff7cf4a9d6816a4b', 'err': 'None'}
 gcr.io/google-containers/kube-cross v1.9.2-2 {'date': '20180131', 'ok': True, 'digest': u'sha256:49514ea5fa9f7fdda0bed8ad6760b61032b0b51fba1cfa756cae1989135a2085', 'err': 'None'}
