@@ -3715,10 +3715,11 @@ gcr.io/google-containers/debian-hyperkube-base-amd64 0.6 {'date': '20171023', 'o
 gcr.io/google-containers/debian-hyperkube-base-amd64 0.10.2 {'date': '20180918', 'ok': True, 'digest': u'sha256:c50522965140c9f206900bf47d547d601c04943e1e59801ba5f70235773cfbb6', 'err': 'None'}
 gcr.io/google-containers/debian-hyperkube-base-amd64 0.10 {'date': '20180322', 'ok': True, 'digest': u'sha256:cc782ed16599000ca4c85d47ec6264753747ae1e77520894dca84b104a7621e2', 'err': 'None'}
 gcr.io/google-containers/debian-hyperkube-base-amd64 0.4.1 {'date': '20171101', 'ok': True, 'err': 'None', 'digest': u'sha256:e9e7f952f7b577418929c3f99160be7d92af33a19801b3d2c8f8a18af2cb4d03'}
-gcr.io/google-containers/defaultbackend-amd64 1.4 {'date': '20171025', 'ok': True, 'digest': u'sha256:865b0c35e6da393b8e80b7e3799f777572399a4cff047eb02a81fa6e7a48ed4b', 'err': 'None'}
-gcr.io/google-containers/defaultbackend-amd64 1.1 {'date': '20170730', 'ok': True, 'err': 'None', 'digest': u'sha256:0b07d6e1652b97d6f68fb63e42342921cd2c7bb4560881353a04e827cb65cf80'}
-gcr.io/google-containers/defaultbackend-amd64 1.2 {'date': '20170730', 'ok': True, 'digest': u'sha256:b63436c8c54d2a856ec13fb0614c1a812273500fd349aa2fb3ab6cf4f88c2a74', 'err': 'None'}
-gcr.io/google-containers/defaultbackend-amd64 1.3 {'date': '20170730', 'ok': True, 'err': 'None', 'digest': u'sha256:fb91f9395ddf44df1ca3adf68b25dcbc269e5d08ba14a40de9abdedafacf93d4'}
+gcr.io/google-containers/defaultbackend-amd64 1.4 {'date': '20171025', 'ok': True, 'err': 'None', 'digest': u'sha256:865b0c35e6da393b8e80b7e3799f777572399a4cff047eb02a81fa6e7a48ed4b'}
+gcr.io/google-containers/defaultbackend-amd64 1.5 {'date': '20180929', 'ok': True, 'digest': u'sha256:4dc5e07c8ca4e23bddb3153737d7b8c556e5fb2f29c4558b7cd6e6df99c512c7', 'err': 'None'}
+gcr.io/google-containers/defaultbackend-amd64 1.1 {'date': '20170730', 'ok': True, 'digest': u'sha256:0b07d6e1652b97d6f68fb63e42342921cd2c7bb4560881353a04e827cb65cf80', 'err': 'None'}
+gcr.io/google-containers/defaultbackend-amd64 1.2 {'date': '20170730', 'ok': True, 'err': 'None', 'digest': u'sha256:b63436c8c54d2a856ec13fb0614c1a812273500fd349aa2fb3ab6cf4f88c2a74'}
+gcr.io/google-containers/defaultbackend-amd64 1.3 {'date': '20170730', 'ok': True, 'digest': u'sha256:fb91f9395ddf44df1ca3adf68b25dcbc269e5d08ba14a40de9abdedafacf93d4', 'err': 'None'}
 gcr.io/google-containers/dnsmasq-metrics-arm 1.0 {'date': '20170730', 'ok': True, 'digest': u'sha256:3b0158f0dfd8d4b76272e9aef3994971b1d527a81a725a235ac2a5d531fffdf6', 'err': 'None'}
 gcr.io/google-containers/echoserver 1.4 {'date': '20170730', 'ok': True, 'digest': u'sha256:5d99aa1120524c801bc8c1a7077e8f5ec122ba16b6dda1a5d3826057f67b9bcb', 'err': 'None'}
 gcr.io/google-containers/echoserver 1.5 {'date': '20170730', 'ok': True, 'err': 'None', 'digest': u'sha256:feed0ca56bcecc621083404518aad894064760b65c1f884ddcb77d3379f7e1fc'}
