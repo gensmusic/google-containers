@@ -5217,6 +5217,8 @@ gcr.io/google-containers/cluster-autoscaler v1.2.0-rc1 {'date': '20180322', 'ok'
 gcr.io/google-containers/cluster-autoscaler v0.3.0 {'date': '20170730', 'ok': True, 'err': 'None', 'digest': u'sha256:9e63121f6ea89a76c6ca64312c29290375290854edd3dc6b660360287cd1d9e0'}
 gcr.io/google-containers/cluster-autoscaler v1.12.0-beta.1 {'date': '20180906', 'ok': True, 'digest': u'sha256:107ee1ea120dfe957ca16ee9e6b0dd10b6842c279b553b8e96c0d41f407a371d', 'err': 'None'}
 gcr.io/google-containers/cluster-autoscaler v0.7.0-beta2 {'date': '20170923', 'ok': True, 'digest': u'sha256:2fd89f93b4d0eee3eae4c7c57b6c32d14c3d598809ecef6c6daf55f43bdc268f', 'err': 'None'}
+gcr.io/google-containers/cluster-autoscaler v1.13.0-alpha.1 {'date': '20181119', 'ok': True, 'err': 'None', 'digest': u'sha256:376a5f1a43513ce48a35ae42b4a1f54e78047c43dbdced4ef58f7bee3d358ca6'}
+gcr.io/google-containers/cluster-autoscaler v1.13.0.alpha.1 {'date': '20181119', 'ok': True, 'digest': u'sha256:376a5f1a43513ce48a35ae42b4a1f54e78047c43dbdced4ef58f7bee3d358ca6', 'err': 'None'}
 gcr.io/google-containers/cluster-autoscaler v1.2.0-beta1 {'date': '20180320', 'ok': True, 'err': 'None', 'digest': u'sha256:040cf1fb1ed2b19a94718ec00665e1aa60cfc675c2182780d09853f5759c6c9e'}
 gcr.io/google-containers/cluster-autoscaler v1.2.0-rc2 {'date': '20180323', 'ok': True, 'digest': u'sha256:3039d475f698384d9de0c8427fd08794091a3a5ea177a2925785f2d098bb8a04', 'err': 'None'}
 gcr.io/google-containers/cluster-autoscaler v0.4.0 {'date': '20170730', 'ok': True, 'err': 'None', 'digest': u'sha256:6821ffbff104e1842d7412f41f99527871dd009d2f06a8f81fdec6c9696ba16f'}
