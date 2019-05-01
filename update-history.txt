@@ -9803,6 +9803,7 @@ gcr.io/google-containers/kube-addon-manager-amd64 v6.4-alpha.1 {'date': '2017073
 gcr.io/google-containers/kube-addon-manager-amd64 v9.0 {'date': '20190125', 'ok': True, 'digest': u'sha256:672794ee3582521eb8bc4f257d0f70c92893f1989f39a200f9c84bcfe1aea7c9', 'err': 'None'}
 gcr.io/google-containers/kube-addon-manager-amd64 v5.1.1 {'date': '20170731', 'ok': True, 'digest': u'sha256:0949a040f46d242834e840b3332c345179a30298f7869d942bbe6ee68bd420b3', 'err': 'None'}
 gcr.io/google-containers/kube-addon-manager-amd64 v6.4-beta.1 {'date': '20170731', 'ok': True, 'err': 'None', 'digest': u'sha256:03a3aeeead17886d1a8c17c41ae56f7a1be4b7c23a281579fbfb13acb2c1eda1'}
+gcr.io/google-containers/kube-addon-manager-amd64 v9.0.1 {'date': '20190501', 'ok': True, 'digest': u'sha256:382c220b3531d9f95bf316a16b7282cc2ef929cd8a89a9dd3f5933edafc41a8e', 'err': 'None'}
 gcr.io/google-containers/kube-addon-manager-amd64 v5.1 {'date': '20170731', 'ok': True, 'err': 'None', 'digest': u'sha256:4f8cbbf605ee2f012ad76c58744fac7299a5faae46994889bfddee4225d25d2a'}
 gcr.io/google-containers/kube-addon-manager-amd64 v5.2 {'date': '20170731', 'ok': True, 'err': 'None', 'digest': u'sha256:6ed536690e045f43b88d2d9035588bbbc00abea34bbce2a9405be633fdef79f3'}
 gcr.io/google-containers/kube-addon-manager-amd64 v6.0-alpha.1 {'date': '20170731', 'ok': True, 'digest': u'sha256:37c6fe73b86cc115c174d8f5f725fa375dfc645a732c9d709d7fcd41fddbe927', 'err': 'None'}
@@ -9819,6 +9820,7 @@ gcr.io/google-containers/kube-addon-manager-amd64 v3 {'date': '20170731', 'ok': 
 gcr.io/google-containers/kube-addon-manager-amd64 v4 {'date': '20170731', 'ok': True, 'digest': u'sha256:605848c08aec91726d0b4732a97f9a33d345633e6a9c4b61177e899f415be575', 'err': 'None'}
 gcr.io/google-containers/kube-addon-manager-amd64 v6.4-alpha.2 {'date': '20170731', 'ok': True, 'err': 'None', 'digest': u'sha256:27598dc6552be1cce2982d45f5392a2a5172fbd031f75b84c93af6ff7d791713'}
 gcr.io/google-containers/kube-addon-manager-amd64 v6 {'date': '20170731', 'ok': True, 'digest': u'sha256:65b88a5e0edc0be9da586bd3e048a0a93b4554175a0d6c051de3077ac5f756b5', 'err': 'None'}
+gcr.io/google-containers/kube-addon-manager-amd64 v8.9.1 {'date': '20190501', 'ok': True, 'err': 'None', 'digest': u'sha256:1db2c955b4b11bd01cacb4441521e4c5aaf5bf6a3bb98c56e9a64b19e3e83c76'}
 gcr.io/google-containers/kube-addon-manager-amd64 v8.8 {'date': '20181003', 'ok': True, 'digest': u'sha256:3da3f17cd4f02fe5696f29a5e6cd4aef7111f20dab9bec54ea35942346cfeb60', 'err': 'None'}
 gcr.io/google-containers/kube-addon-manager-amd64 v8.9 {'date': '20181025', 'ok': True, 'err': 'None', 'digest': u'sha256:2fd1daf3d3cf0e94a753f2263b60dbb0d42b107b5cde0c75ee3fc5c830e016e4'}
 gcr.io/google-containers/kube-addon-manager-amd64 v8.6 {'date': '20180221', 'ok': True, 'digest': u'sha256:3519273916ba45cfc9b318448d4629819cb5fbccbb0822cce054dd8c1f68cb60', 'err': 'None'}
@@ -10791,6 +10793,7 @@ gcr.io/google-containers/heapster-influxdb 0google_containers_heapster-influxdb-
 gcr.io/google-containers/heapster-influxdb 1google_containers_heapster-influxdb-arm {'date': '20170730', 'ok': True, 'digest': u'sha256:6fe8048aec1c89b1f643f0ca6128a35da124ffe222866be7ab43f9b446428cc3', 'err': 'None'}
 gcr.io/google-containers/kube-addon-manager-arm v9.0 {'date': '20190125', 'ok': True, 'digest': u'sha256:583f8a64d980ecb355c6b63f8870d3d124d844d78442cda0fefd8d955f0e31ab', 'err': 'None'}
 gcr.io/google-containers/kube-addon-manager-arm v5.1.1 {'date': '20170731', 'ok': True, 'err': 'None', 'digest': u'sha256:1f638a1cd6276fd0452e9d93edac734b3a7210ffe332a524eda95af9dee42d9a'}
+gcr.io/google-containers/kube-addon-manager-arm v9.0.1 {'date': '20190501', 'ok': True, 'digest': u'sha256:83c206176286cf4c74ff1b7da7e7f2f684c7f1e52450e64fe16d5d8b091c8e40', 'err': 'None'}
 gcr.io/google-containers/kube-addon-manager-arm v5.2 {'date': '20170731', 'ok': True, 'digest': u'sha256:d0ffc86d01acd2ea56729a5c5fa0e26a78e7ede0f12d128a12b61f98d8656c82', 'err': 'None'}
 gcr.io/google-containers/kube-addon-manager-arm v6.0-alpha.1 {'date': '20170731', 'ok': True, 'err': 'None', 'digest': u'sha256:708dbf5695ec7d28c28afe6f5ceaa4bef514bd8a15baef2985565e545a758096'}
 gcr.io/google-containers/kube-addon-manager-arm v6.2 {'date': '20170731', 'ok': True, 'digest': u'sha256:0af0663e150bd1ab82237931d502dac61aca5ef75629b325484561976fd30cc5', 'err': 'None'}
@@ -10805,6 +10808,7 @@ gcr.io/google-containers/kube-addon-manager-arm v8.7 {'date': '20180905', 'ok': 
 gcr.io/google-containers/kube-addon-manager-arm v6.4-alpha.3 {'date': '20170731', 'ok': True, 'err': 'None', 'digest': u'sha256:dc004d8868ad266ed90a45806862a8e6ec7e660649bcfa0071cc35aa3ae494db'}
 gcr.io/google-containers/kube-addon-manager-arm v5 {'date': '20170731', 'ok': True, 'digest': u'sha256:a54f8f9b39ba7172bb8a4a23510ba5c8514c0497c3da7a5976614fabd005a4a1', 'err': 'None'}
 gcr.io/google-containers/kube-addon-manager-arm v6.4-alpha.1 {'date': '20170731', 'ok': True, 'err': 'None', 'digest': u'sha256:a2e88776265e736ba5febe80b8296194786bfbae9591167b803f28a3cec44921'}
+gcr.io/google-containers/kube-addon-manager-arm v8.9.1 {'date': '20190501', 'ok': True, 'err': 'None', 'digest': u'sha256:b64b85f53ec8100d18a9f1651cb52f3e587feadc1162af692eb42b088405de76'}
 gcr.io/google-containers/kube-addon-manager-arm v8.8 {'date': '20181003', 'ok': True, 'digest': u'sha256:aadaec950598d7aa7437fcf975e0a5691d0850f4ca7a0e715b054939b32bfb99', 'err': 'None'}
 gcr.io/google-containers/kube-addon-manager-arm v8.9 {'date': '20181025', 'ok': True, 'err': 'None', 'digest': u'sha256:96269f7b232c9d7b5dab7ebd3e36b1b21251bab7f819cb4378a52d08a7a44573'}
 gcr.io/google-containers/kube-addon-manager-arm v6.4-beta.1 {'date': '20170731', 'ok': True, 'digest': u'sha256:06034e991354dcd19a44aed0f3b81c2be6229aafbcf4dc76378c8f9156bec9b7', 'err': 'None'}
@@ -11250,6 +11254,7 @@ gcr.io/google-containers/kube-addon-manager v9.0 {'date': '20190125', 'ok': True
 gcr.io/google-containers/kube-addon-manager v5.1.1 {'date': '20170731', 'ok': True, 'err': 'None', 'digest': u'sha256:0949a040f46d242834e840b3332c345179a30298f7869d942bbe6ee68bd420b3'}
 gcr.io/google-containers/kube-addon-manager v6.4-beta.1 {'date': '20170731', 'ok': True, 'err': 'None', 'digest': u'sha256:03a3aeeead17886d1a8c17c41ae56f7a1be4b7c23a281579fbfb13acb2c1eda1'}
 gcr.io/google-containers/kube-addon-manager v6.1.1 {'date': '20170731', 'ok': True, 'digest': u'sha256:df8ee03e2ef117f2b710d05769521491f95a690f25c0446982b7a6ce2ed3bf55', 'err': 'None'}
+gcr.io/google-containers/kube-addon-manager v9.0.1 {'date': '20190501', 'ok': True, 'digest': u'sha256:382c220b3531d9f95bf316a16b7282cc2ef929cd8a89a9dd3f5933edafc41a8e', 'err': 'None'}
 gcr.io/google-containers/kube-addon-manager v5.1 {'date': '20170731', 'ok': True, 'digest': u'sha256:9579e7859f1abb24eed4d44b6cea55dac6ae2a2ab9409ab0aa817211800c6acc', 'err': 'None'}
 gcr.io/google-containers/kube-addon-manager v5.2 {'date': '20170731', 'ok': True, 'err': 'None', 'digest': u'sha256:a01d92e69ee8a186e2675dfd62da1900fa7cbcfc873fe13fc1515e83dd90cb77'}
 gcr.io/google-containers/kube-addon-manager v6.0-alpha.1 {'date': '20170731', 'ok': True, 'digest': u'sha256:16a121848996f3d1ec6993086b3d1221078b4da3024a505cc9198bef7d9b80e5', 'err': 'None'}
@@ -11266,6 +11271,7 @@ gcr.io/google-containers/kube-addon-manager v3 {'date': '20170731', 'ok': True, 
 gcr.io/google-containers/kube-addon-manager v4 {'date': '20170731', 'ok': True, 'err': 'None', 'digest': u'sha256:7f52a65c2320d4499159fe096549173d5d360e6600c1bd1295a523a4142df2a3'}
 gcr.io/google-containers/kube-addon-manager v6.4-alpha.2 {'date': '20170731', 'ok': True, 'err': 'None', 'digest': u'sha256:27598dc6552be1cce2982d45f5392a2a5172fbd031f75b84c93af6ff7d791713'}
 gcr.io/google-containers/kube-addon-manager v6.4-alpha.1 {'date': '20170731', 'ok': True, 'digest': u'sha256:d14ec6d27791481c19c5f2c8dd5bae243d3a5ef5bf26e7f2c05501c11ae2b858', 'err': 'None'}
+gcr.io/google-containers/kube-addon-manager v8.9.1 {'date': '20190501', 'ok': True, 'err': 'None', 'digest': u'sha256:1db2c955b4b11bd01cacb4441521e4c5aaf5bf6a3bb98c56e9a64b19e3e83c76'}
 gcr.io/google-containers/kube-addon-manager v8.8 {'date': '20181003', 'ok': True, 'digest': u'sha256:3da3f17cd4f02fe5696f29a5e6cd4aef7111f20dab9bec54ea35942346cfeb60', 'err': 'None'}
 gcr.io/google-containers/kube-addon-manager v8.9 {'date': '20181025', 'ok': True, 'err': 'None', 'digest': u'sha256:2fd1daf3d3cf0e94a753f2263b60dbb0d42b107b5cde0c75ee3fc5c830e016e4'}
 gcr.io/google-containers/kube-addon-manager v1 {'date': '20170731', 'ok': True, 'digest': u'sha256:78076a15e60259a9bcbc29058535215508cb50122855203827f16d9ee971e334', 'err': 'None'}
@@ -12017,6 +12023,7 @@ gcr.io/google-containers/volume-iscsi latest {'date': '20180301', 'ok': True, 'd
 gcr.io/google-containers/etcd_probe_shyamjvs test {'date': '20170730', 'ok': True, 'digest': u'sha256:e1cde49b19243f1f01d3fecea3ca9a96aaa2c0960130212ea78ecfc4f09e4df0', 'err': 'None'}
 gcr.io/google-containers/kube-addon-manager-ppc64le v9.0 {'date': '20190125', 'ok': True, 'digest': u'sha256:cec3e9ca3c07ae9151fab6c6a4076b2d522aee630b19ef8aefdec6d416a69c76', 'err': 'None'}
 gcr.io/google-containers/kube-addon-manager-ppc64le v5.1.1 {'date': '20170731', 'ok': True, 'digest': u'sha256:cf46d1a965dc1afcd88720e211be1e417d92c95fb3283ab9a7cd49a6849f0a95', 'err': 'None'}
+gcr.io/google-containers/kube-addon-manager-ppc64le v9.0.1 {'date': '20190501', 'ok': True, 'digest': u'sha256:e85a525543c6dd6aea4a62a0bcf0872f4b022c9e6b3b864f0d8dddb7680322c4', 'err': 'None'}
 gcr.io/google-containers/kube-addon-manager-ppc64le v5.2 {'date': '20170731', 'ok': True, 'err': 'None', 'digest': u'sha256:89ff27a73808063e2b5133598f5a15c355ff07781b65c5bb73fd2de7435032be'}
 gcr.io/google-containers/kube-addon-manager-ppc64le v6.0-alpha.1 {'date': '20170731', 'ok': True, 'digest': u'sha256:b66357747cee54aa16d200979d8392553c2ce252accdad21376264e30582a614', 'err': 'None'}
 gcr.io/google-containers/kube-addon-manager-ppc64le v6.2 {'date': '20170731', 'ok': True, 'err': 'None', 'digest': u'sha256:f6c787725aa321ee280b09d1a5d26c26dcf8f323ad20e885d5184dafc0db1454'}
@@ -12030,6 +12037,7 @@ gcr.io/google-containers/kube-addon-manager-ppc64le v8.7 {'date': '20180905', 'o
 gcr.io/google-containers/kube-addon-manager-ppc64le v6.4-alpha.3 {'date': '20170731', 'ok': True, 'digest': u'sha256:aee847a93a0823f5e1b8bd4149e713a8c46ee35bf27c35f0ad8ed6bcd3e02415', 'err': 'None'}
 gcr.io/google-containers/kube-addon-manager-ppc64le v5 {'date': '20170731', 'ok': True, 'err': 'None', 'digest': u'sha256:eaf877de513b611c20b65eb312be4e927b780800773cfa19e3cd4ae8b9ee07e4'}
 gcr.io/google-containers/kube-addon-manager-ppc64le v6.4-alpha.1 {'date': '20170731', 'ok': True, 'digest': u'sha256:3e04049226bf3354fee9ea931cc997d4599df0c53eaaead54352486bed13a11d', 'err': 'None'}
+gcr.io/google-containers/kube-addon-manager-ppc64le v8.9.1 {'date': '20190501', 'ok': True, 'err': 'None', 'digest': u'sha256:fc2117c0e3046940406991267e39cb7198b2d8f7003b52b049683249e6dd6fbb'}
 gcr.io/google-containers/kube-addon-manager-ppc64le v8.8 {'date': '20181003', 'ok': True, 'digest': u'sha256:eeef28d32231d86e768ab76fba4d2bd3690d77381a3c449b3a0f4a54108ee5a7', 'err': 'None'}
 gcr.io/google-containers/kube-addon-manager-ppc64le v8.9 {'date': '20181025', 'ok': True, 'err': 'None', 'digest': u'sha256:ae1b802018f06c01e8fc1daecbfa2c93d5bf98d1316b4d717ed34c3c79ad572f'}
 gcr.io/google-containers/kube-addon-manager-ppc64le v6.4-beta.1 {'date': '20170731', 'ok': True, 'err': 'None', 'digest': u'sha256:dd9f0cf178fb1a5aa6e24206643a7637b9abbdb39eba3bcf4f39eb6e97dd4e0d'}
@@ -13016,6 +13024,7 @@ gcr.io/google-containers/kube-addon-manager-s390x v6.1 {'date': '20170731', 'ok'
 gcr.io/google-containers/kube-addon-manager-s390x v6.4 {'date': '20170731', 'ok': True, 'err': 'None', 'digest': u'sha256:89f1e425e3c3d0d2229022d2b7b6afe239dc0d9a7ed3bc1116290fd767b01386'}
 gcr.io/google-containers/kube-addon-manager-s390x v6.5 {'date': '20171115', 'ok': True, 'err': 'None', 'digest': u'sha256:f0adda1c86cf7826abbf7d0039c2a02818a447a60b9d9e7d89c9ce9a2d06d9ce'}
 gcr.io/google-containers/kube-addon-manager-s390x v9.0 {'date': '20190125', 'ok': True, 'digest': u'sha256:cb6a92a9711a0bad96307c90c61e34e878519233e57c7551a30a793163dd992f', 'err': 'None'}
+gcr.io/google-containers/kube-addon-manager-s390x v9.0.1 {'date': '20190501', 'ok': True, 'digest': u'sha256:5bb574a8158fdec6bc8a61f3b6ae074cdb373b5addb6f4c9641dc9b81e6cb74a', 'err': 'None'}
 gcr.io/google-containers/kube-addon-manager-s390x v6.4-beta.1 {'date': '20170731', 'ok': True, 'err': 'None', 'digest': u'sha256:abe1e53c3f3f8f41dfb0172bddda20cb45e181698e07ea732051692bb26570fe'}
 gcr.io/google-containers/kube-addon-manager-s390x v6.4-beta.2 {'date': '20170731', 'ok': True, 'digest': u'sha256:b1f78aadda6c42d701b6582248e54bfdcf2713222e749d1598b1aef974c149a7', 'err': 'None'}
 gcr.io/google-containers/kube-addon-manager-s390x v8.6 {'date': '20180221', 'ok': True, 'digest': u'sha256:4208f754d9bc656e945d8aa1970351ae8e38d8a979335a5ad77d20f48d4201af', 'err': 'None'}
@@ -13023,6 +13032,7 @@ gcr.io/google-containers/kube-addon-manager-s390x v8.7 {'date': '20180905', 'ok'
 gcr.io/google-containers/kube-addon-manager-s390x v6.4-alpha.3 {'date': '20170731', 'ok': True, 'digest': u'sha256:806c64bc0cacd51b0c3fc1ebee0feed1a522dcc7b0ebee973b86046cc4bebce0', 'err': 'None'}
 gcr.io/google-containers/kube-addon-manager-s390x v6.4-alpha.2 {'date': '20170731', 'ok': True, 'err': 'None', 'digest': u'sha256:bb046baeb94e2488eb4870658f4bb50ab5867962e9ca9a645dc0908a6852bf0a'}
 gcr.io/google-containers/kube-addon-manager-s390x v6.4-alpha.1 {'date': '20170731', 'ok': True, 'digest': u'sha256:d15629b9c569bdafee94107dfd4be0d5655a00d1325b9e10625c5e43444b82c7', 'err': 'None'}
+gcr.io/google-containers/kube-addon-manager-s390x v8.9.1 {'date': '20190501', 'ok': True, 'err': 'None', 'digest': u'sha256:7cdee7bcff5d87a46dad653c1ff2baf412e61b20421bf680450feab7a98de2eb'}
 gcr.io/google-containers/kube-addon-manager-s390x v8.8 {'date': '20181003', 'ok': True, 'digest': u'sha256:2f5996d9388d25203d497913dc4941ecdb70ff58f61e69c65758bd1cd48e13c0', 'err': 'None'}
 gcr.io/google-containers/kube-addon-manager-s390x v8.9 {'date': '20181025', 'ok': True, 'err': 'None', 'digest': u'sha256:93b13a94094bf75af87e6c745849287cfd3bb6211f41316e89a71618d997ec78'}
 gcr.io/google-containers/no-snat-test-amd64 1.0.0 {'date': '20170731', 'ok': True, 'digest': u'sha256:4439fd3f5224c74ab9f9cc7d3367e14431e5046ba7b109e964966cec07690ac1', 'err': 'None'}
@@ -13158,6 +13168,7 @@ gcr.io/google-containers/heapster_influxdb v0.7 {'date': '20170730', 'ok': True,
 gcr.io/google-containers/heapster_influxdb v0.3 {'date': '20170730', 'ok': True, 'err': 'None', 'digest': u'sha256:24d4d513b462bb23f17c6cc980df7cbd12b7b18305dff75a3c84553bc917ca34'}
 gcr.io/google-containers/kube-addon-manager-arm64 v9.0 {'date': '20190125', 'ok': True, 'digest': u'sha256:2866e639c1c7cc44cbd98965248aa4e9576eaf889e256f537108ce9904aeb57c', 'err': 'None'}
 gcr.io/google-containers/kube-addon-manager-arm64 v5.1.1 {'date': '20170731', 'ok': True, 'err': 'None', 'digest': u'sha256:aed5f548447eb81dadc658311bfe2d5fd2102746407ecd42553fe7d75efa11af'}
+gcr.io/google-containers/kube-addon-manager-arm64 v9.0.1 {'date': '20190501', 'ok': True, 'digest': u'sha256:15503580f364a25b3e47b28c78fdf01bc0fdc36829ef263392a0c5240d880c11', 'err': 'None'}
 gcr.io/google-containers/kube-addon-manager-arm64 v5.2 {'date': '20170731', 'ok': True, 'digest': u'sha256:6ed8969c7c679c832d298e147d9cc0dc803c9fa8d9199e43f9bc5df2ba0c1c63', 'err': 'None'}
 gcr.io/google-containers/kube-addon-manager-arm64 v6.0-alpha.1 {'date': '20170731', 'ok': True, 'err': 'None', 'digest': u'sha256:f851117c15dff6041eb0bee0300778c38673752625763ff050d17c9f4a44497b'}
 gcr.io/google-containers/kube-addon-manager-arm64 v6.2 {'date': '20170731', 'ok': True, 'digest': u'sha256:4182c4db11197a1ad5a8cb85ded088e96ce3cea6ce7a3e1aaff422f0bebaf160', 'err': 'None'}
@@ -13172,6 +13183,7 @@ gcr.io/google-containers/kube-addon-manager-arm64 v8.7 {'date': '20180905', 'ok'
 gcr.io/google-containers/kube-addon-manager-arm64 v6.4-alpha.3 {'date': '20170731', 'ok': True, 'err': 'None', 'digest': u'sha256:f30cbe6246d9e566b31aa58ed6e289f896d96f3b923e482e7729d4d658bba0f4'}
 gcr.io/google-containers/kube-addon-manager-arm64 v5 {'date': '20170731', 'ok': True, 'digest': u'sha256:350700dc1d780792f7554d006892988ef801f866112355075aed00d9c6fbb90e', 'err': 'None'}
 gcr.io/google-containers/kube-addon-manager-arm64 v6.4-alpha.1 {'date': '20170731', 'ok': True, 'err': 'None', 'digest': u'sha256:aa2a2ad01cea62155d6cda5bcab6f5f78dd77d106633a82f98aa5ae1a2511fa2'}
+gcr.io/google-containers/kube-addon-manager-arm64 v8.9.1 {'date': '20190501', 'ok': True, 'err': 'None', 'digest': u'sha256:6683e1c4a95478f55ea5844bd17988a4eb5af726564f6d6f65406b23955919e1'}
 gcr.io/google-containers/kube-addon-manager-arm64 v8.8 {'date': '20181003', 'ok': True, 'digest': u'sha256:f952ac21e51a3e55c1927949a22c300ac7f1bc19916fc158f55ee357094de38d', 'err': 'None'}
 gcr.io/google-containers/kube-addon-manager-arm64 v8.9 {'date': '20181025', 'ok': True, 'err': 'None', 'digest': u'sha256:88aa26e60dc3fb5797fd64b7294c3bb5f07fe6a25ddbb64c488fde22ac3110b3'}
 gcr.io/google-containers/kube-addon-manager-arm64 v6.4-beta.1 {'date': '20170731', 'ok': True, 'digest': u'sha256:0c6ef9f1bed556017b8cdd81af240c0bafd8e38ef2405209e18eb262ea3a218b', 'err': 'None'}
