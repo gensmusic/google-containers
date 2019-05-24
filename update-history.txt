@@ -740,11 +740,12 @@ gcr.io/google-containers/toolbox 20190312-00 {'date': '20190320', 'ok': True, 'e
 gcr.io/google-containers/toolbox 20180123-00 {'date': '20180124', 'ok': True, 'err': 'None', 'digest': u'sha256:baf25b7029f0f7519b9acb7528a30e6106f56a6022d2a9dcd7fab8cf30ccd302'}
 gcr.io/google-containers/toolbox 20161012-00 {'date': '20170731', 'ok': True, 'digest': u'sha256:4a695c0405cabd0998b7c669f83966fc2b6622798bccafb3234c3003c843909d', 'err': 'None'}
 gcr.io/google-containers/toolbox 20161101-00 {'date': '20170731', 'ok': True, 'err': 'None', 'digest': u'sha256:638276b6331a017781e1ef97ca3b182bb80cbf62d2eb89aecc2ba38eedd540fc'}
+gcr.io/google-containers/toolbox 20190523-00 {'date': '20190524', 'ok': True, 'err': 'None', 'digest': u'sha256:4de42fa6aa0b8b85fa9839ca2eba4457335fa3840007cd2b72e5869c2af87d35'}
 gcr.io/google-containers/toolbox 20180309-00 {'date': '20180310', 'ok': True, 'err': 'None', 'digest': u'sha256:82ea3c863cd0fa3eef9da666b7663bdb5f27c73932d45a07106bc3164e138391'}
 gcr.io/google-containers/toolbox 20161110-02 {'date': '20170731', 'ok': True, 'digest': u'sha256:a13ab5b2feaeef9dbe42f3a5cdbf9fcdd92f3ea020249cd37d80777d44897de7', 'err': 'None'}
 gcr.io/google-containers/toolbox 20170615-00 {'date': '20170731', 'ok': True, 'digest': u'sha256:6e9f4daf9edcd5cf6bdfc24cbc4868f5ae097a7324ff67c2b18a0f50252ba7ff', 'err': 'None'}
 gcr.io/google-containers/toolbox 20180918-00 {'date': '20180919', 'ok': True, 'err': 'None', 'digest': u'sha256:f79e82df012b1d1c02d6196b75a05bb3fdef0b737fcaf3482aaccfb3d3a68656'}
-gcr.io/google-containers/toolbox latest {'date': '20190320', 'ok': True, 'digest': u'sha256:f28b0d2fa5c6c4bccd0732cf17ba82f2a619cc083ce8c45e024d53af997df450', 'err': 'None'}
+gcr.io/google-containers/toolbox latest {'date': '20190524', 'ok': True, 'digest': u'sha256:4de42fa6aa0b8b85fa9839ca2eba4457335fa3840007cd2b72e5869c2af87d35', 'err': 'None'}
 gcr.io/google-containers/etcd-version-monitor-shyamjvs test {'date': '20170730', 'ok': True, 'digest': u'sha256:7bb2e84c12bf37dfc665b80711062752ef9268dcb728b083c895ed92584995e0', 'err': 'None'}
 gcr.io/google-containers/k8s-dns-dnsmasq-nanny-arm64 1.14.2 {'date': '20170731', 'ok': True, 'err': 'None', 'digest': u'sha256:58c3f90caa7f9d4090bb2b48a3a7b7117f5cddce60d0695ef242c4b80aa975d7'}
 gcr.io/google-containers/k8s-dns-dnsmasq-nanny-arm64 1.14.3 {'date': '20170731', 'ok': True, 'digest': u'sha256:4cd1439cdb0377445d28e91319a4b58038a9e4f2d0c7cfc5bcacf152876c5695', 'err': 'None'}
